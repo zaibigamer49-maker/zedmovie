@@ -83,7 +83,7 @@ internal fun DetailsItem(
         if (isPlaying) {
             StartAppAd.showAd(context)
             while (isPlaying) {
-                delay(15 * 60 * 1000L)
+                delay(30 * 60 * 1000L)
                 StartAppAd.showAd(context)
             }
         }
