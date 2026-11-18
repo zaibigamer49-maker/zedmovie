@@ -24,7 +24,8 @@ jobs:
           GRADLEW_PATH=$(find . -name "gradlew" -print -quit)
           PROJECT_DIR=$(dirname "$GRADLEW_PATH")
           cd "$PROJECT_DIR"
-          cat << 'EOF' > app/src/main/AndroidManifest.xml
+          python3 -c '
+          xml = """<?xml version="1.0" encoding="utf-8"?>
           <manifest xmlns:android="http://android.com"
               xmlns:tools="http://android.com">
 
@@ -41,7 +42,7 @@ jobs:
                   android:enableOnBackInvokedCallback="true"
                   android:supportsRtl="true"
                   android:theme="@style/Theme.zedMovies.Splash"
-                  tools:replace="android:allowBackup,android:label,android:theme"
+                  tools:replace="android:allowBackup,android:label,android:theme,android:supportsRtl"
                   tools:targetApi="tiramisu">
 
                   <meta-data
@@ -74,10 +75,11 @@ jobs:
                       </intent-filter>
                   </activity>
               </application>
-          </manifest>
-          EOF
+          </manifest>"""
+          open("app/src/main/AndroidManifest.xml", "w").write(xml)
+          '
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
