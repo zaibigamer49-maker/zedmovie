@@ -25,15 +25,17 @@ jobs:
           PROJECT_DIR=$(dirname "$GRADLEW_PATH")
           cd "$PROJECT_DIR"
           python3 -c '
-          xml = """<?xml version="1.0" encoding="utf-8"?>
+          n = "android:" + "name"
+          v = "android:" + "value"
+          xml = f"""<?xml version="1.0" encoding="utf-8"?>
           <manifest xmlns:android="http://android.com"
               xmlns:tools="http://android.com">
 
-              <uses-permission android:name="android.permission.INTERNET" />
-              <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+              <uses-permission {n}="android.permission.INTERNET" />
+              <uses-permission {n}="android.permission.ACCESS_NETWORK_STATE" />
 
               <application
-                  android:name=".zedMoviesApplication"
+                  {n}=".zedMoviesApplication"
                   android:allowBackup="true"
                   android:usesCleartextTraffic="true"
                   android:icon="@mipmap/zed_movies_round"
@@ -46,32 +48,32 @@ jobs:
                   tools:targetApi="tiramisu">
 
                   <meta-data
-                      android:name="com.startapp.sdk.APPLICATION_ID"
-                      android:value="156899168" />
+                      {n}="com.startapp.sdk.APPLICATION_ID"
+                      {v}="156899168" />
 
                   <profileable
                       android:shell="true"
                       tools:targetApi="29" />
 
                   <activity
-                      android:name=".ui.webview.WebViewActivity"
+                      {n}=".ui.webview.WebViewActivity"
                       android:exported="false"
                       android:theme="@style/Theme.NoActionbar.FullScreen.zedMovies"
                       android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard"
                       android:windowSoftInputMode="adjustPan" />
                   <activity
-                      android:name=".ui.trailer.TrailerActivity"
+                      {n}=".ui.trailer.TrailerActivity"
                       android:exported="false"
                       android:theme="@style/Theme.zedMovies.Trailer"
                       android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard" />
                   <activity
-                      android:name=".zedMoviesActivity"
+                      {n}=".zedMoviesActivity"
                       android:exported="true"
                       android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize"
                       android:screenOrientation="unspecified">
                       <intent-filter>
-                          <action android:name="android.intent.action.MAIN" />
-                          <category android:name="android.intent.category.LAUNCHER" />
+                          <action {n}="android.intent.action.MAIN" />
+                          <category {n}="android.intent.category.LAUNCHER" />
                       </intent-filter>
                   </activity>
               </application>
@@ -79,7 +81,7 @@ jobs:
           open("app/src/main/AndroidManifest.xml", "w").write(xml)
           '
           chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
