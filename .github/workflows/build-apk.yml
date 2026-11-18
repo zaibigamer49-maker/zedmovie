@@ -19,67 +19,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Fix Manifest and Build Debug APK
+      - name: Build Debug APK
         run: |
           GRADLEW_PATH=$(find . -name "gradlew" -print -quit)
           PROJECT_DIR=$(dirname "$GRADLEW_PATH")
           cd "$PROJECT_DIR"
-          python3 -c '
-          n = "android:" + "name"
-          v = "android:" + "value"
-          xml = f"""<?xml version="1.0" encoding="utf-8"?>
-          <manifest xmlns:android="http://android.com"
-              xmlns:tools="http://android.com">
-
-              <uses-permission {n}="android.permission.INTERNET" />
-              <uses-permission {n}="android.permission.ACCESS_NETWORK_STATE" />
-
-              <application
-                  {n}=".zedMoviesApplication"
-                  android:allowBackup="true"
-                  android:usesCleartextTraffic="true"
-                  android:icon="@mipmap/zed_movies_round"
-                  android:label="@string/app_name"
-                  android:roundIcon="@mipmap/zed_movies_round"
-                  android:enableOnBackInvokedCallback="true"
-                  android:supportsRtl="true"
-                  android:theme="@style/Theme.zedMovies.Splash"
-                  tools:replace="android:allowBackup,android:label,android:theme,android:supportsRtl"
-                  tools:targetApi="tiramisu">
-
-                  <meta-data
-                      {n}="com.startapp.sdk.APPLICATION_ID"
-                      {v}="156899168" />
-
-                  <profileable
-                      android:shell="true"
-                      tools:targetApi="29" />
-
-                  <activity
-                      {n}=".ui.webview.WebViewActivity"
-                      android:exported="false"
-                      android:theme="@style/Theme.NoActionbar.FullScreen.zedMovies"
-                      android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard"
-                      android:windowSoftInputMode="adjustPan" />
-                  <activity
-                      {n}=".ui.trailer.TrailerActivity"
-                      android:exported="false"
-                      android:theme="@style/Theme.zedMovies.Trailer"
-                      android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard" />
-                  <activity
-                      {n}=".zedMoviesActivity"
-                      android:exported="true"
-                      android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize"
-                      android:screenOrientation="unspecified">
-                      <intent-filter>
-                          <action {n}="android.intent.action.MAIN" />
-                          <category {n}="android.intent.category.LAUNCHER" />
-                      </intent-filter>
-                  </activity>
-              </application>
-          </manifest>"""
-          open("app/src/main/AndroidManifest.xml", "w").write(xml)
-          '
+          git checkout -- app/src/main/AndroidManifest.xml || true
+          sed -i 's|<application|<application xmlns:tools="http://android.com" tools:replace="android:allowBackup,android:label,android:theme,android:supportsRtl"|g' app/src/main/AndroidManifest.xml
+          sed -i 's|</application>|<meta-data android:name="com.startapp.sdk.APPLICATION_ID" android:value="156899168" /></application>|g' app/src/main/AndroidManifest.xml
           chmod +x gradlew
           ./gradlew assembleDebug
 
