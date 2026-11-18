@@ -41,17 +41,14 @@ import java.net.URL
 @AndroidEntryPoint
 class zedMoviesActivity : ComponentActivity() {
 
-    // Yahan apni Start.io App ID paste karein (maslan "208491023")
-    private val STARTAPP_APP_ID = "210249681"
-
-    // Aap ke GitHub username (gamers841) ka auto-update link
+    private val STARTAPP_APP_ID = "156899168"
     private val UPDATE_JSON_URL = "https://githubusercontent.com"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        // Start.io Ads Initialize (Splash ad band rakha hai taake user tang na ho)
+        // Initialize Start.io Earning Ads with your real ID
         StartAppSDK.init(this, STARTAPP_APP_ID, true)
         StartAppAd.disableSplash()
 
@@ -74,12 +71,11 @@ class zedMoviesActivity : ComponentActivity() {
             }
 
             Column(modifier = Modifier.fillMaxSize()) {
-                // Main App Content
                 Box(modifier = Modifier.weight(1f)) {
                     zedMoviesApp()
                 }
 
-                // Sirf 1 Chota User-Friendly Banner Ad bilkul neechay
+                // Bottom Earning Banner Ad
                 AndroidView(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -88,7 +84,7 @@ class zedMoviesActivity : ComponentActivity() {
                 )
             }
 
-            // In-App Auto Update Popup (Logo + zeDMovies Name + Download Button)
+            // In-App Auto Update Popup with Your Custom Logo
             updateInfo?.let { info ->
                 Dialog(onDismissRequest = { if (!info.forceUpdate) updateInfo = null }) {
                     Card(
@@ -102,9 +98,9 @@ class zedMoviesActivity : ComponentActivity() {
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
                             Image(
-                                painter = painterResource(id = R.mipmap.ic_launcher),
+                                painter = painterResource(id = R.mipmap.zed_movies_round),
                                 contentDescription = "zeDMovies Logo",
-                                modifier = Modifier.size(72.dp)
+                                modifier = Modifier.size(76.dp)
                             )
                             Spacer(modifier = Modifier.height(12.dp))
                             Text(
@@ -114,7 +110,7 @@ class zedMoviesActivity : ComponentActivity() {
                             )
                             Spacer(modifier = Modifier.height(8.dp))
                             Text(
-                                text = info.message.ifEmpty { "New Update Available! Download the latest version for new features and faster streaming." },
+                                text = info.message.ifEmpty { "New Update Available! Download the latest version for new movies and faster servers." },
                                 fontSize = 14.sp,
                                 textAlign = TextAlign.Center
                             )

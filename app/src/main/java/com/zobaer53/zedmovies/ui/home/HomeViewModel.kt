@@ -1,5 +1,3 @@
-
-
 package com.zobaer53.zedmovies.ui.home
 
 import android.util.Log
@@ -44,17 +42,17 @@ class HomeViewModel @Inject constructor(
     }
 
     private fun loadContent() {
+        // Upcoming removed: direct Popular, TopRated, NowPlaying Movies & TV/Anime/Cartoons
         val movieMediaTypes = listOf(
-            MediaType.Movie.Upcoming,
-            MediaType.Movie.TopRated,
             MediaType.Movie.Popular,
-            MediaType.Movie.NowPlaying
+            MediaType.Movie.NowPlaying,
+            MediaType.Movie.TopRated
         )
         movieMediaTypes.forEach(::loadMovies)
 
         val tvShowMediaTypes = listOf(
-            MediaType.TvShow.TopRated,
             MediaType.TvShow.Popular,
+            MediaType.TvShow.TopRated,
             MediaType.TvShow.NowPlaying
         )
         tvShowMediaTypes.forEach(::loadTvShows)
