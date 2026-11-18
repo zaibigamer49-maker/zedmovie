@@ -1,0 +1,52 @@
+[
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\adblockclient-lib.cpp.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\adblockclient-lib.cpp\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\adblockclient-lib.cpp"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\ad-block\\ad_block_client.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\ad_block_client.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\ad_block_client.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\ad-block\\cosmetic_filter.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\cosmetic_filter.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\cosmetic_filter.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\ad-block\\filter.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\filter.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\filter.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\ad-block\\no_fingerprint_domain.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\no_fingerprint_domain.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\no_fingerprint_domain.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\ad-block\\context_domain.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\context_domain.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\context_domain.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\ad-block\\protocol.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\protocol.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\ad-block\\protocol.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\bloom-filter-cpp\\BloomFilter.cpp.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\bloom-filter-cpp\\BloomFilter.cpp\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\bloom-filter-cpp\\BloomFilter.cpp"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\hashset-cpp\\hashFn.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\hashset-cpp\\hashFn.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\hashset-cpp\\hashFn.cc"
+},
+{
+  "directory": "E:/New folder/NoFlix-3.0.5/adblock-client/.cxx/Debug/2d3x1o3m/x86",
+  "command": "C:\\Users\\shahzaib\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android26 --sysroot=C:/Users/shahzaib/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dadblock_client_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\adblock-client.dir\\src\\main\\cpp\\third-party\\hashset-cpp\\hash_set.cc.o -c \"E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\hashset-cpp\\hash_set.cc\"",
+  "file": "E:\\New folder\\NoFlix-3.0.5\\adblock-client\\src\\main\\cpp\\third-party\\hashset-cpp\\hash_set.cc"
+}
+]
